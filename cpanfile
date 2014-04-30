@@ -1,6 +1,13 @@
 requires 'Plack';
 requires 'Starman';
 requires 'common::sense';
+requires 'Plack::App::File';
+requires 'Plack::Builder';
+requires 'HTTP::Date';
+requires 'IO::Socket::INET';
+requires 'IO::Select';
+requires 'Socket';
+requires 'JSON::XS';
 
 on test => sub {
     requires 'Test::Harness';
