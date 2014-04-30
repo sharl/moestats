@@ -1,3 +1,4 @@
+#!/usr/bin/env perl
 # -*- coding: utf-8 mode: perl -*-
 
 my $app = sub {
