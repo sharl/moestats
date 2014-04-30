@@ -1,0 +1,22 @@
+div.poweredby {
+    text-align: right;
+}
+
+.p_area {
+}
+
+dd.dimm {
+    background-color: #888888;
+}
+
+dd.new {
+    background-color: #AAAACC;
+}
+
+dd.change {
+    background-color: #CCAAAA;
+}
+
+span.name {
+    font-weight: bold;
+}

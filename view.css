@@ -1,0 +1,15 @@
+ body { -webkit-text-size-adjust: 100%; }
+ table { border-collapse: collapse; background-color: #eeeeee; }
+ td { border: solid 1px; border-color: #cccccc; padding: 4px; }
+ #servers    { }
+ #server     { }
+ #name       { text-align: left;   }
+ #status     { text-align: center; }
+ #login      { text-align: right;  }
+ #login_max  { text-align: right;  }
+ #reboot     { text-align: center; font-size: 50%; }
+
+ #tofficial    { text-align: right;  }
+ #tmaintenance { text-align: right;  }
+ #tmypage      { text-align: right;  }
+ #tstatus      { text-align: right;  }
