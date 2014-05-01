@@ -23,6 +23,7 @@ my $xs = JSON::XS->new;
 
 builder {
     mount '/' => Plack::App::File->new(file => 'index.html');
+    mount '/favicon.ico' => Plack::App::File->new(file => 'favicon.ico');
     mount '/common.css' => Plack::App::File->new(file => 'common.css');
     mount '/view.css' => Plack::App::File->new(file => 'view.css');
     mount '/jquery-1.10.2.min.js' => Plack::App::File->new(file => 'jquery-1.10.2.min.js');
