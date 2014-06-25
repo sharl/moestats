@@ -1,0 +1,4 @@
+* NOTE
+
+$ heroku create --stack cedar moestats --buildpack https://github.com/miyagawa/heroku-buildpack-perl.git
+$ git push heroku master
