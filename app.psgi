@@ -12,7 +12,7 @@ use Socket 'inet_ntoa';
 use JSON::XS;
 use Data::Dumper;
 
-my $upserver = '202.232.117.40:11300';
+my $upserver = '150.95.62.67:11300';
 use constant {
     TIMEOUT  => 1,
     INTERVAL => 30,
