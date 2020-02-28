@@ -176,7 +176,7 @@ sub getStatus {
 	name => $name,
 	server => inet_ntoa(pack('N', $ipaddr)),
 	reboot => $reboot,
-	status => $status{$status} // $status,
+	status => $status{$status % 256} // $status,
 	login => $login_now,
 	login_max => $login_max,
     };
