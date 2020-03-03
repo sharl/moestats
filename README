@@ -1,4 +1,5 @@
 * NOTE
 
-$ heroku create --stack cedar moestats --buildpack https://github.com/miyagawa/heroku-buildpack-perl.git
+$ echo 5.22.0 > .perl-version
+$ heroku create --stack heroku-18 moestats --buildpack https://github.com/pnu/heroku-buildpack-perl.git
 $ git push heroku master
