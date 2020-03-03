@@ -9,7 +9,7 @@ use HTTP::Date;
 use IO::Socket::INET;
 use IO::Select;
 use Socket 'inet_ntoa';
-use JSON::XS;
+use JSON::MaybeXS;
 use Data::Dumper;
 
 my $upserver = '150.95.62.67:11300';
@@ -19,7 +19,7 @@ use constant {
     JSONFILE => 'stats.json',
 };
 
-my $xs = JSON::XS->new;
+my $xs = JSON::MaybeXS->new;
 
 builder {
     mount '/' => Plack::App::File->new(file => 'index.html');

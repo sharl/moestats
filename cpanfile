@@ -7,7 +7,7 @@ requires 'HTTP::Date';
 requires 'IO::Socket::INET';
 requires 'IO::Select';
 requires 'Socket';
-requires 'JSON::XS';
+requires 'JSON::MaybeXS';
 
 on test => sub {
     requires 'Test::Harness';
