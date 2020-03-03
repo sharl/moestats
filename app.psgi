@@ -45,7 +45,7 @@ builder {
 };
 
 sub readJSON {
-    open(my $fd, JSONFILE);
+    open(my $fd, JSONFILE) or return '[]';
     local $/;
     <$fd>;
 }
