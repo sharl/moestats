@@ -22,14 +22,14 @@ use constant {
 my $xs = JSON::MaybeXS->new;
 
 builder {
-    mount '/' => Plack::App::File->new(file => 'index.html');
-    mount '/favicon.ico' => Plack::App::File->new(file => 'favicon.ico');
-    mount '/common.css' => Plack::App::File->new(file => 'common.css');
-    mount '/view.css' => Plack::App::File->new(file => 'view.css');
-    mount '/jquery-1.10.2.min.js' => Plack::App::File->new(file => 'jquery-1.10.2.min.js');
-    mount '/wTimer.js' => Plack::App::File->new(file => 'wTimer.js');
-    mount '/onload.js' => Plack::App::File->new(file => 'onload.js');
-    mount '/google.js' => Plack::App::File->new(file => 'google.js');
+    mount '/' => Plack::App::File->new(file => 'index.html')->to_app();
+    mount '/favicon.ico' => Plack::App::File->new(file => 'favicon.ico')->to_app();
+    mount '/common.css' => Plack::App::File->new(file => 'common.css')->to_app();
+    mount '/view.css' => Plack::App::File->new(file => 'view.css')->to_app();
+    mount '/jquery-1.10.2.min.js' => Plack::App::File->new(file => 'jquery-1.10.2.min.js')->to_app();
+    mount '/wTimer.js' => Plack::App::File->new(file => 'wTimer.js')->to_app();
+    mount '/onload.js' => Plack::App::File->new(file => 'onload.js')->to_app();
+    mount '/google.js' => Plack::App::File->new(file => 'google.js')->to_app();
 
     mount '/stats' => sub {
 	my $env = shift;
