@@ -8,7 +8,8 @@ var timer = new wTimer({
     fps: 0.1,
     run: function() {
       $.getJSON(uri, function(servers) {
-          var html = "<caption>リアルタイム更新中</caption>";
+          var now = new Date();
+          var html = "<caption>リアルタイム更新中 " + now.toLocaleString() + "</caption>";
           html += "<tr><th>server</th><th>stats</th><th>now</th><th>max</th><th>reboot</th></tr>";
           for (var s in servers) {
             var server    = servers[s]["name"];
@@ -23,7 +24,7 @@ var timer = new wTimer({
             var min   = reboot.getMinutes();   min   = (min   < 10) ? '0' + min   : min;
             var sec   = reboot.getSeconds();   sec   = (sec   < 10) ? '0' + sec   : sec;
             reboot = year + '-' + month + '-' + day + ' ' + hour + ':' + min + ':' + sec;
-			
+
             html += "<tr id='server'>";
             html += "<td id='name'>" + server + "</td>";
             html += "<td id='status'>" + stats + "</td>";
